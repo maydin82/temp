@@ -4,4 +4,4 @@
   tasks:
     - name: Print a greeting
       ansible.builtin.debug:
-        msg: "The user said: {{ user_greeting | default('Hello, World!') }}"
+        msg: "The user said: {{ allowed | default('Hello, World!') }}"
