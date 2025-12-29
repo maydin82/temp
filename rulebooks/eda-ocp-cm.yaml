@@ -11,3 +11,6 @@
         run_job_template:
           name: mustafa-elleme-helloworld
           organization: mustafa-elleme
+          job_args:
+            extra_vars:
+              allowed: "{{ event.resource.metadata.name }}"
