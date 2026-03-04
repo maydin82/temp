@@ -10,7 +10,7 @@
       action:
         run_job_template:
           name: mustafa_hello
-          organization: default
+          organization: Default
           job_args:
             extra_vars:
               allowed: "{{ event.resource.metadata.name }}"
