@@ -1,0 +1,7 @@
+- name: Discover all Controller-injected variables
+  hosts: all
+  gather_facts: false
+  tasks:
+    - name: Display all available variables
+      ansible.builtin.debug:
+        msg: "{{ vars }}"
